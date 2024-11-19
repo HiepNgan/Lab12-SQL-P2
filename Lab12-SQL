@@ -1,0 +1,4 @@
+SELECT c.course_id, c.course_name
+FROM courses c
+LEFT JOIN assignments a ON c.course_id = a.course_id
+WHERE a.id IS NULL;
